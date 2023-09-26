@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nava - Hometown</title>
+    <title>Nava - Profile</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,12 +15,12 @@
 <body>
 <section class="sub-header">
 <nav>
-    <a href="../index.html"><img src="../img/logo.png"></a>
+    <a href="index.html"><img src="img/logo.png"></a>
     
     <div class="nav-links" id="navLinks">
         <i class="fa fa-chevron-right" aria-hidden="True" onclick="hideMenu()"></i>
         <ul>
-            <li><a href="../index.html">HOME</a></li>
+            <li><a href="index.html">HOME</a></li>
             <li><a href="profile.html">PROFILE</a></li>
             <li><a href="hometown.html">HOMETOWN</a></li>
             <li><a href="food.html">FOOD</a></li>
@@ -29,27 +29,35 @@
     </div>
     <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
 </nav>
-<h1>Hometown</h1>
+<h1>Profile</h1>
 </section>
 
-<!-- Hometown Content -->
+<!-- Profile Content -->
 
-<section class="hometown">
-    <h1>Denpasar, Bali, Indonesia</h1>
-    <p>Denpasar is the capital of the province of Bali, Indonesia. Denpasar is the main gateway to the island of 
-        Bali which is a popular tourist destination. Denpasar is Bali's bustling capital, surrounded by some of the island's most 
-        popular but rarely visited areas Explorer.
-    </p>
-    <a href="https://www.indonesia.travel/gb/en/destinations/bali-nusa-tenggara/denpasar" target="_blank" class="hero-btn">FIND OUT MORE</a>
+<section class="profile">
+    <div class="row">
+        <div class="profile-col">
+            <h1>Hi, let me intoduce myself</h1>
+            <p>I am Made Nanda Wija Vahindra, you can call me Nanda. I am from Bali, Indonesia. I am a student of Institut Teknologi Sepuluh Nopember Surabaya majoring in Informatics Engineering.
+                I like to play guitar and badminton. As an Informatics student, I am quite proficient in several programming languages such as C, C++, Java, HTML, CSS, Javascript, and Python. 
+                Apart from that, I can also use several software from Adobe such as Photoshop, Illustrator, Premiere Pro, After Effects, and Audition.
+                </p>
+        </div>
+        <div class="profile-col">
+            <img src="../img/profilepict.jpg" alt="nanda vahindra's profile picture">
+        </div>
+
+    </div>
+
 </section>
 
 <section class="footer">
     <h4>About Me</h4>
         <div class="icons">
             <i class="fa fa-facebook"></i>
-            <i class="fa fa-linkedin"></i>
-            <i class="fa fa-instagram"></i>
-            <i class="fa fa-github"></i>
+            <a href="https://www.linkedin.com/in/nanda-vahindra-928376194/" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/nandavahindra/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="https://github.com/NandaVahindra" target="_blank"><i class="fa fa-github"></i></a>
         </div>
         <p class="by">Website by Nanda Vahindra</p>
 </section>
@@ -74,6 +82,6 @@
     }, 500);
     }
 </script>
-    
+   
 </body>
 </html>
