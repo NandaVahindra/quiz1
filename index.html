@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nava</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<section class="header">
+<nav>
+    <a href="index.html"><img src="img/logo.png"></a>
+
+    <i class="fa fa-bars" onclick="showMenu()"></i>
+    
+    <div class="nav-links" id="navLinks">
+        <i class="fa fa-chevron-right" aria-hidden="True" onclick="hideMenu()"></i>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="pages/profile.html">PROFILE</a></li>
+            <li><a href="pages/hometown.html">HOMETOWN</a></li>
+            <li><a href="pages/food.html">FOOD</a></li>
+            <li><a href="pages/tourist.html">TOURIST</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="text-box">
+    <h1>Hi, Welcome</h1>
+    <p>This website is currently created for assignment purposes</p>
+    <a href="https://github.com/NandaVahindra" class="hero-btn" target="_blank">Visit my Github</a>
+</div>
+</section>
+
+
+<section class="footer">
+    <h4>About Me</h4>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <a href="https://www.linkedin.com/in/nanda-vahindra-928376194/" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/nandavahindra/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="https://github.com/NandaVahindra" target="_blank"><i class="fa fa-github"></i></a>
+        </div>
+        <p class="by">Website by Nanda Vahindra</p>
+</section>
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu()
+    {
+        navLinks.style.display = "unset";
+        setTimeout(function () {
+            navLinks.style.right = "0";
+        document.body.style.overflow = "hidden";
+    }, 1);
+        
+    }
+    function hideMenu()
+    {
+        navLinks.style.right = "-200px";
+        document.body.style.overflow = "auto";
+        setTimeout(function () {
+        navLinks.style.display = "none";
+    }, 500);
+    }
+    
+</script>
+ 
+</body>
+</html>

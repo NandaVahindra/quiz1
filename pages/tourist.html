@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nava - Tourist</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<section class="sub-header">
+<nav>
+    <a href="../index.html"><img src="../img/logo.png"></a>
+    
+    <div class="nav-links" id="navLinks">
+        <i class="fa fa-chevron-right" aria-hidden="True" onclick="hideMenu()"></i>
+        <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="profile.html">PROFILE</a></li>
+            <li><a href="hometown.html">HOMETOWN</a></li>
+            <li><a href="food.html">FOOD</a></li>
+            <li><a href="tourist.html">TOURIST</a></li>
+        </ul>
+    </div>
+    <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+</nav>
+<h1>Tourist</h1>
+</section>
+
+<!-- tourist Content -->
+
+<section class="tourist">
+    <h1>Tourist Destination</h1>
+    <p>Tourist destination near Denpasar</p>
+    <div class="row">
+        <div class="tourist-col">
+            <img src="../img/tourist1.jpg" alt="Kuta">
+            <div class="layer">
+                <h3>KUTA</h3>
+                <p>Kuta was originally known as a fishing village, 
+                    it was one of the first towns on Bali to see substantial tourist development, 
+                    and as a beach resort remains one of Indonesia's major tourist destinations.</p>
+            </div>
+        </div>
+        <div class="tourist-col">
+            <img src="../img/tourist2.jpg" alt="Ulun danu temple">
+            <div class="layer">
+                <h3>ULUN DANU TEMPLE</h3>
+                <p>Ulun Danu Beratan Temple is both a famous picturesque landmark and a significant temple 
+                    complex on the western side of Beratan Lake in Bedugul, central Bali. 
+                </p>
+            </div>
+        </div>
+        <div class="tourist-col">
+            <img src="../img/tourist3.jpg" alt="Mount batur">
+            <div class="layer">
+                <h3>MOUNT BATUR</h3>
+                <p>Mount Batur is one of the most popular sights in Bali, for good reason. It's a beginner-friendly climb, and you get to see amazing views.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="footer">
+    <h4>About Me</h4>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-github"></i>
+        </div>
+        <p class="by">Website by Nanda Vahindra</p>
+</section>
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu()
+    {
+        navLinks.style.display = "unset";
+        setTimeout(function () {
+            navLinks.style.right = "0";
+        document.body.style.overflow = "hidden";
+    }, 1);
+        
+    }
+    function hideMenu()
+    {
+        navLinks.style.right = "-200px";
+        document.body.style.overflow = "auto";
+        setTimeout(function () {
+        navLinks.style.display = "none";
+    }, 500);
+    }
+</script>
+   
+</body>
+</html>

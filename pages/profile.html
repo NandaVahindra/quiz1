@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nava - Profile</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<section class="sub-header">
+<nav>
+    <a href="../index.html"><img src="../img/logo.png"></a>
+    
+    <div class="nav-links" id="navLinks">
+        <i class="fa fa-chevron-right" aria-hidden="True" onclick="hideMenu()"></i>
+        <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="profile.html">PROFILE</a></li>
+            <li><a href="hometown.html">HOMETOWN</a></li>
+            <li><a href="food.html">FOOD</a></li>
+            <li><a href="tourist.html">TOURIST</a></li>
+        </ul>
+    </div>
+    <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+</nav>
+<h1>Profile</h1>
+</section>
+
+<!-- Profile Content -->
+
+<section class="profile">
+    <div class="row">
+        <div class="profile-col">
+            <h1>Hi, let me intoduce myself</h1>
+            <p>I am Made Nanda Wija Vahindra, you can call me Nanda. I am from Bali, Indonesia. I am a student of Institut Teknologi Sepuluh Nopember Surabaya majoring in Informatics Engineering.
+                I like to play guitar and badminton. As an Informatics student, I am quite proficient in several programming languages such as C, C++, Java, HTML, CSS, Javascript, and Python. 
+                Apart from that, I can also use several software from Adobe such as Photoshop, Illustrator, Premiere Pro, After Effects, and Audition.
+                </p>
+        </div>
+        <div class="profile-col">
+            <img src="../img/profilepict.jpg" alt="nanda vahindra's profile picture">
+        </div>
+
+    </div>
+
+</section>
+
+<section class="footer">
+    <h4>About Me</h4>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-github"></i>
+        </div>
+        <p class="by">Website by Nanda Vahindra</p>
+</section>
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu()
+    {
+        navLinks.style.display = "unset";
+        setTimeout(function () {
+            navLinks.style.right = "0";
+        document.body.style.overflow = "hidden";
+    }, 1);
+        
+    }
+    function hideMenu()
+    {
+        navLinks.style.right = "-200px";
+        document.body.style.overflow = "auto";
+        setTimeout(function () {
+        navLinks.style.display = "none";
+    }, 500);
+    }
+</script>
+   
+</body>
+</html>
